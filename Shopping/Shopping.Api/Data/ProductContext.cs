@@ -1,6 +1,7 @@
-﻿using Shopping.Client.Models;
+﻿
+using Shopping.Api.Models;
 
-namespace Shopping.Client.Data
+namespace Shopping.Api.Data
 {
     public static class ProductContext
     {
