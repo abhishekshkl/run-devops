@@ -1,0 +1,16 @@
+https://developercommunity.visualstudio.com/t/New-Kubernetes-service-connection-causes/10138123#T-N10138393
+
+
+
+kubectl get namespaces
+kubectl config view  -o json
+kubectl config view --minify -o json
+az aks show -n myAKSCluster -g myresourcegroup -o json
+
+kubectl get secret sa-secret -n default -o json
+
+kubectl get secrets
+
+$ kubectl create secret docker-registry shoppingapi --namespace default --docker-server=abhishekshkl68shoppingacr.azurecr.io --docker-username=abhishekshkl68shoppingacr --docker-password=mlTr/kV9Etg0AjHs0GYMbdYHSj5f/2TfsF6Ip63p0g+ACRCfuz12
+
+ az aks get-credentials --admin --name myAKSCluster --resource-group myresourcegroup
