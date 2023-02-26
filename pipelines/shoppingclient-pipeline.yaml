@@ -9,7 +9,7 @@ trigger:
     paths:
       include:
       - Shopping/Shopping.Client/*
-      - aks/shoppingClient.yaml
+      - aks/shoppingclient.yaml
 
 resources:
 - repo: self
@@ -18,11 +18,11 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '3c6f5824-e069-41a6-b911-f31e4683794d'
-  imageRepository: 'shoppingClient'
+  imageRepository: 'shoppingclient'
   containerRegistry: 'abhishekshkl68shoppingacr.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'shoppingClient'
+  imagePullSecret: 'shoppingapi'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
